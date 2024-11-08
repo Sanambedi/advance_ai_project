@@ -17,7 +17,8 @@ import plotly.express as px
 import io
 from datetime import datetime
 from sklearn.decomposition import PCA
-
+from dash import Dash
+app = Dash(__name__)
 # Initialize the Dash app with a Bootstrap theme
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app.title = 'Advanced AI Project'
