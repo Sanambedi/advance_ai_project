@@ -21,7 +21,7 @@ from sklearn.decomposition import PCA
 # Initialize the Dash app with a Bootstrap theme
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app.title = 'Advanced AI Project'
-
+server = app.server
 # App layout
 app.layout = html.Div(
     [
